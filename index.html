@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /*Estilização das tags padrão da página*/
+
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 5px;
+            margin: 15px;
+            letter-spacing: 10px;
+            font-size: 3em;
+            padding: 0;
+            color: rgba(50, 99, 99, 0.932);
+            text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+                0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+                0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+                -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+        }
+
+        h4 {
+            margin: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #13486b;
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(29, 110, 121);
+
+        }
+
+        a:hover {
+            color: rgba(29, 110, 121, 0.753);
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: rgb(50, 99, 99);
+            color: white;
+            width: 70%;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgba(50, 99, 99, 0.932);
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #0b3e47;
+            font-weight: bold;
+        }
+
+        /*Estilização personalizadas com IDS e Classes*/
+
+        #container {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(50, 99, 99, 0.123);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center
+        }
+
+        #box {
+            width: 350px;
+            height: 350px;
+            background: #fff;
+            text-align: center;
+            border: 1px solid rgba(73, 72, 72, 0.466);
+            border-radius: 10px;
+        }
+
+        .input {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 3px;
+            width: 70%;
+            cursor: pointer;
+            background-color: aliceblue;
+        }
+    </style>
+
+    <link rel="icon" href="imagens/icone.png">
+
+    <title>Unives - Faculdade de Ensino a distância</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="box">
+            <header id="titulos">
+                <h1>UNIVES</h1>
+                <h4>Sua faculdade de ensino a distância.</h4>
+            </header>
+
+            <section>
+                <input placeholder="Login" type="text" id="login" class="input">
+                <br>
+                <input placeholder="Senha" type="password" id="senha" class="input"> <br>
+                <button>Login</button>
+                <a href="">
+                    <p>Esqueceu sua senha?</p>
+                </a>
+                <a href="">
+                    <p>Crie seu cadastro!</p>
+                </a>
+            </section>
+
+            <footer>
+                <p>&copy; 2023 - Daniel Mendes Ferreira</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
